@@ -1,9 +1,9 @@
-const helloBnt=document.getElementByld("helloBnt");
-const message=document.getElementByld("message");
+const helloBtn=document.getElementById("helloBtn");
+const message=document.getElementById("message");
 
-helloBnt.addEvebtListener("click",()=>{
-    consthour=new Date().getHours();
-    letgreeting="こんにちは！"
+helloBtn.addEventListener("click",()=>{
+    const hour=new Date().getHours();
+    let greeting="こんにちは！"
     if(hour<12){
         greeting="おはようございます！";
     }else if(hour>=18){
